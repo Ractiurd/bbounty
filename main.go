@@ -67,6 +67,8 @@ func main() {
 			if !exists {
 				fmt.Fprintln(f1, line)
 				uniqueLines[line] = struct{}{}
+			} else {
+				duplicateCount++
 			}
 		}
 	}
